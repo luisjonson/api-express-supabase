@@ -1,0 +1,43 @@
+{
+  "name": "backend_express",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "ignore": [
+    "dist",
+    "build",
+    "public",
+    "*.log"
+  ],
+  "scripts": {
+    "start": "nodemon server.js",
+    "syncforce": "node src/database/syncforce.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jonson",
+  "license": "ISC",
+  "description": "Esta é uma API RESTfull construída com Node.js e Express, documentada com Swagger.\r ## Instalação\r 1. Clone o repositório",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10",
+    "sequelize": "^6.37.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisjonson/backend_node_express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luisjonson/backend_node_express/issues"
+  },
+  "homepage": "https://github.com/luisjonson/backend_node_express#readme"
+}
