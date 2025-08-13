@@ -76,3 +76,62 @@ Servidor back-end feito com Node.js e Express.
 > **npm install dotenv**
 # Intalação do cookie-parser para encapculamento de autenticação
 >  **npm install express cookie-parser**
+
+
+# Configuração para usar o supabase
+
+## 1️⃣ Instalar dependências
+###  No seu projeto Express, rode:
+> npm install @supabase/supabase-js
+
+## 2️⃣ Criar conta e projeto no Supabase
+
+### Vá em https://supabase.com
+
+### Crie um projeto  
+#### Anote:  
+> Project URL (ex: https://xyzcompany.supabase.co)
+> API Key (a chave anon para uso público ou service_role para uso backend)
+
+## 4️⃣ Criar variáveis de ambiente
+
+#### No .env:
+
+   SUPABASE_URL=https://seu-projeto.supabase.co
+   SUPABASE_KEY=sua_chave_service_role_ou_anon
+
+## 5️⃣ Usar no seu servidor Express
+#### Exemplo básico (server.js):
+``` js
+import express from 'express'  
+import { supabase } from './supabaseClient.js'  
+import dotenv from 'dotenv'  
+dotenv.config()  
+
+const app = express()  
+app.use(express.json())  
+
+app.get('/usuarios', async (req, res) => {  
+  const { data, error } = await supabase  
+    .from('usuarios')  
+    .select('*')  
+
+  if (error) return res.status(400).json({ error: error.message })  
+  res.json(data)  
+})  
+
+app.post('/usuarios', async (req, res) => {  
+  const { nome, email } = req.body   
+  const { data, error } = await supabase  
+    .from('usuarios')  
+    .insert([{ nome, email }])  
+
+  if (error) return res.status(400).json({ error: error.message })  
+  res.json(data)  
+})  
+
+app.listen(3000, () => console.log('Servidor rodando na porta 3000'))  
+````
+
+
+         
