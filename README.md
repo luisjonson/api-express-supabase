@@ -90,15 +90,15 @@ Servidor back-end feito com Node.js e Express.
 
 ### Crie um projeto  
 #### Anote:  
-> Project URL (ex: https://xyzcompany.supabase.co)
-> API Key (a chave anon para uso público ou service_role para uso backend)
+> Project URL (ex: https://xyzcompany.supabase.co)  
+> API Key (a chave anon para uso público ou service_role para uso backend)  
 
 ## 4️⃣ Criar variáveis de ambiente
 
 #### No .env:
 
-   SUPABASE_URL=https://seu-projeto.supabase.co
-   SUPABASE_KEY=sua_chave_service_role_ou_anon
+   SUPABASE_URL=https://seu-projeto.supabase.co  
+   SUPABASE_KEY=sua_chave_service_role_ou_anon  
 
 ## 5️⃣ Usar no seu servidor Express
 #### Exemplo básico (server.js):
