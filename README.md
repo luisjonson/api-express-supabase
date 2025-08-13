@@ -37,24 +37,24 @@ Após iniciar o servidor, acesse:
 ### Categoria
 -  `GET /categorias` - Lista todas as catregorias
 ## Estrutura do projeto
- src
- |── config /
- |		└── *.js
- |── controllers/
- |	    └── *.js
- |── database
- |	    └── syncforce.js
- |── model
- |── routes/
- |     └── *.js # Todas as Rotas
- |── utils
- |── ecommece.sql //scriptbanco
-├── package.json # Dependências
- .env
- README.md # Este arquivo
- .gitingnore
- server.js  # Arquivo principal
- sync.js
+ src  
+ |── config /  
+ |		└── *.js  
+ |── controllers/  
+ |	    └── *.js  
+ |── database  
+ |	    └── syncforce.js  
+ |── model  
+ |── routes/  
+ |     └── *.js # Todas as Rotas  
+ |── utils  
+ |── ecommece.sql //scriptbanco  
+├── package.json # Dependências  
+ .env  
+ README.md # Este arquivo  
+ .gitingnore  
+ server.js  # Arquivo principal  
+ sync.js  
 
 ## Tecnologias utilizadas
  -  **Node.js** - Runtime JavaScript
