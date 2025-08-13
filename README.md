@@ -11,18 +11,18 @@ Esta é uma API RESTfull construída com Node.js e Express, documentada com Swag
 > npm start
 
 ### criar um arquivo .env com as configuraçãoes
-APP_KEY_TOKEN= ''
+APP_KEY_TOKEN= ''  
 //Informação de conexão com o banco de dados
-DATABASE_HOST= ''
-DATABASE_USER= ''
-DATABASE_SENHA= ''
-DATABASE= ''
-DATABASE_PORT= ''
-SALT_ROUNDS=
-PARSE_INT_BASE=
-PORT= 3000
-HOST= localhost
-HOST_FRONT=localhost
+DATABASE_HOST= ''  
+DATABASE_USER= ''  
+DATABASE_SENHA= ''  
+DATABASE= ''  
+DATABASE_PORT= ''  
+SALT_ROUNDS=  
+PARSE_INT_BASE=  
+PORT= 3000  
+HOST= localhost  
+HOST_FRONT=localhost  
 ### Os script MYSQL
 > src/ecommece.sql
 ## Acessando a documentação
